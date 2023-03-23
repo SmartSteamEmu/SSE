@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="UTF-8">
+    <meta name="description" content="Nero Burning Rom">
+    <meta name="keywords" content="Nero,Nero Express,Nero Burning Rom,CD,DVD,Blu-Ray">
+    <meta name="robots" content="NOODP">
+    <meta name="google-site-verification" content="2P14de1zV_NTk03Ebnc0wpPKWaeJoj7B9Tc_HtRkOfE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+
+    <title>SmartSteamEmu</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" sizes="16x16 32x32 64x64">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/TLbanner.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+
+    <link rel="dns-prefetch" href="http://git.qbittorrent.org">
+    <link rel="dns-prefetch" href="http://bugs.qbittorrent.org">
+    <link rel="dns-prefetch" href="http://wiki.qbittorrent.org">
+    <link rel="dns-prefetch" href="http://forum.qbittorrent.org">
+  </head>
+  <body>
+    <span id="forkongithub">
+      <a href="download.html">Latest: v1.4.3</a>
+    </span>
+
+    <div id="MainBox">
+      <div id="LogoChris">
+        <img src="qb_banner.png" alt="qBittorrent" style="transform: translateY(-50%);" class="banner"/>
+      </div>
+
+      <div class="menu">
+        <ul>
+           <li class="first"><a href="index.html">Home</a></li>
+          <li><a href="download.html">Download</a></li>
+          <li><a href="screen.html">Screenshots</a></li>
+		            <li><a href="team.html">Development</a></li>
+					<li><a href="info.html">Changelog</a></li>
+        </ul>
+      </div>
+
+      <div class="wrapper">
+        <div class="wrapper-top">
+          <div class="wrapper-bottom">
+            <div id="content">
+              <div class="stretcher" id="StretchHome">
+              <!-- ## qBittorrent: An Advanced BitTorrent Client -->
+<h3>Changelog</h3>
+<strong><font color="#00ff15" size="2.5">Version 1.4.3 (April 11, 2017)</font><br>
+- Added x64 launcher<br>
+- Added game server rules support<br>
+- Added protection on game server callback<br>
+- Updated steamstub patcher<br>
+- Internet server list will query LAN too<br>
+- Fixed Plugin PostCallback doesn't copy the data<br>
+- Fixed Plugin callback may not run<br>
+- Fixed GC reply missing job source<br>
+- Fixed deadlock around callback<br>
+- Faster lobby request<br>
+- Plugin with wrong platform will not be loaded<br>
+- SSELauncher: All list box item's (dlc, broadcast, direct patch, ban) can be individually disabled<br>
+- SSELauncher: Added option to launch the game using x64 launcher (and can enable x64 inject)<br></strong>
+<br>
+<strong><font color="#00ff15" size="2.5">Version 1.4.2 (February 14, 2017)</font><br>
+ - Updated steam interface<br>
+ - Fixed CS:GO try to connect to non CSGO servers<br>
+ - Prevent thread creation for each async calls<br>
+</strong>
+<br>
+<strong><font color="#00ff15" size="2.5">Version 1.4.1 (June 9, 2016)</font><br>
+ - Updated steam stub patcher<br>
+ - Implemented CSGO Find game<br>
+ - Added CSGO relay server<br>
+ - Added limit to avatar response<br>
+ - Fixed crash on COH2<br>
+ - Fixed avatar return null early<br>
+ - Fixed LAN server doesn't appear on server browser<br>
+ - Fixed lobby got deleted while user still joining<br>
+ - Fixed/Updated latest steam interface<br>
+ - Fixed steam HTTP body content doesn't work other than POST<br>
+ - Fixed DirectPatch cannot patch on the end of memory region<br>
+ - Fixed networking stack may wait indefinitely causing entire game to hang<br>
+ - Fixed broken invite system<br>
+ - SSEOverlay: Fixed crash when opening overlay dialog from game<br>
+ - SSEOverlay: Fixed crash if using invalid locale<br>
+ - SSEOverlay: Updated Turkish, Simplified Chinese and Germany language<br>
+ - SSEOverlay: Allow game to process game invites callback<br>
+ - SSEOverlay: Fixed OpenGL games take long time to init overlay<br>
+ - SSEOverlay: Fixed possible crash<br>
+ - SSEOverlay: Mapped some game server appid to client to allow client searching the server<br>
+ - SSEOverlay: Added OnlineKey allowing to connect with other that use the same key<br>
+ - SSEOverlay: Added HookRefCount option to turn off reference counting that will shutdown the overlay<br>
+ - SSELauncher: Updated settings with OnlineKey and HookRefCount<br>
+ - SSELauncher: Fixed unable to add game if launcher resides on root drive<br>
+ - SSELauncher: Fixed overlay screenshot hotkey will select default value back<br>
+</strong>
+<br>
+<strong><font color="#00ff15" size="2.5">Version 1.4.0 (April 15, 2016)</font><br>
+- Added all map tags for CS:GO UGC<br>
+ - Added DragonBall Xenoverse parsing lobby data crash fix<br>
+ - Fixed missing overlay inset implementation<br>
+ - Fixed plugins got unloaded early<br>
+ - Fixed FileShare missing return value causing game like Melty Blood AACC to stall<br>
+ - Game server now will be notified if user ticket is cancelled<br>
+ - Fixed creating lobby with zero maximum members causes lobby to delete itself which fix Divinity Original Sin<br>
+ - Fixed GetLobbyGameServer return true even it isn't set, this fix Sniper Ghost Warrior 2<br>
+ - Fixed assigning zero to p2p virtual port will fail socket creation, this fix Dead Rising 2 : OTR<br>
+ - Rewrite server browser, more efficient, give correct ping and more responsive<br>
+ - Fixed LAN Server browser ping, give correct ping instead of fixed 50<br>
+ - Fixed server browser callback doesn't get removed causing next queries to be slowed down<br>
+ - Added SmartReady() and SmartUnready() to PDK<br>
+ - Fixed auto connection on packet receive, this fix Tomb Raider<br>
+ - Limit avatar requests<br>
+ - Added SSEFirewall plugins to block/unblock game communication to server<br>
+ - SSEOverlay: Added ISSeOverlay PDK<br>
+ - SSEOverlay: Added Screenshot hotkey support<br>
+ - SSEOverlay: Faster screenshots, no more lagging when capturing screenshot<br>
+ - SSEOverlay: Faster notifications, hopefully no more lagging<br>
+ - SSEOverlay: Fixed some DX11 possible crash<br>
+ - SSEOverlay: Fixed DX11 text box width calculation<br>
+ - SSEOverlay: Fixed OpenGL texture<br>
+ - SSEOverlay: Fixed OpenGL text lists overflow<br>
+ - SSEOverlay: Fixed some game like Limbo doesn't show overlay<br>
+ - SSEOverlay: Fixed friends "Playing" game will not updated if they switch to another game<br>
+ - SSEOverlay: Fixed scrollbar position got reset when window resized<br>
+ - SSEOverlay: Fixed cannot type on any input box on some game like Awesomenauts<br>
+ - SSEOverlay: Fixed DX9 leaks causing game crash<br>
+ - SSEOverlay: Fixed DX9 state saver causing game texture/mesh corruption<br>
+ - SSEOverlay: Fixed leaks if overlay got shutdown early<br>
+ - SSEOverlay: Fixed overlay deactivate event not fired causing game like Tomb Raider stall<br>
+ - SSEOverlay: Fixed scroll position can be possibly greater than the listbox item causing crash<br>
+ - SSEOverlay: Fixed crash when mouse enter on destroyed overlay object<br>
+ - SSEOverlay: Fixed unnecessary text got processed by translator<br>
+ - SSEOverlay: Favors hooking D3D11 instead of OpenGL if graphics vendor uses D3D11 to draw OpenGL<br>
+ - SSEOverlay: Time/date locale support<br>
+ - SSEOverlay: Cursor position is now restored when closing overlay<br>
+ - SSEOverlay: Ensure every overlay object is created/destroyed on UI thread<br>
+ - SSEOverlay: Implemented overlay inset<br>
+ - SSEOverlay: Implemented sound notification for message and screenshot<br>
+ - SSEOverlay: Minor changes on UI size to allow more room for translated text<br>
+ - SSEOverlay: Added new console command, "overlay_graphics" and "set_locale"<br>
+ - SSELauncher: Faster startup<br>
+ - SSELauncher: Fixed Chinese language not being changed to schinese/tchinese<br>
+ - SSELauncher: Added more language to lists<br>
+ - SSELauncher: Added overlay language settings<br>
+ - SSELauncher: Added ability to delete apps using DEL key<br>
+ - SSELauncher: Added Open File Location on selected apps<br>
+ - SSELauncher: Added ability to add [SmartSteamEmu] custom settings<br>
+ - SSELauncher: Added SSEOverlay Screenshot hotkey settings<br>
+</strong>
+<br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
+
